@@ -1,0 +1,123 @@
+.login{
+  width: 100%;
+  height: 100%;
+  background-image: url('./loginbg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.login-box{
+    z-index: 101;
+    position: absolute;
+    width: 540px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-25%);
+    background-image: url('./loginborder.png');
+    background-size: 100% 100%;
+}
+.login-tip{
+    color: #ebfcff;
+    text-align: center;
+    line-height: 18px;
+}
+.user-input-box{
+    width: 380px;
+    margin: 0 auto;
+    padding: 60px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-input-box>div{
+    margin-top: 12px;
+	width: 100%;
+	text-align: center;
+}
+
+.user-input-yz{
+   
+    display: flex;
+}
+.code{
+    box-sizing: border-box;
+    background: #f7f7f7;
+    font-family: Arial;
+    font-style: italic;
+    color: #1b2d44;
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    border: 0;
+    padding: 2px;
+    cursor: pointer;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.user-psw-input{
+    margin-top: 12px;
+    width: 100%;
+    text-align: center;
+
+}
+input{
+    width: 100%;
+    height: 36px;
+    background: transparent;
+    border: 1px solid #00baff;
+    box-sizing: border-box;
+    padding: 0 8px;
+    color: #00baff;
+}
+
+.login-pwd-tip span {
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+}
+
+.login-pwd-tip {
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+}
+
+.login-pwd-tip .rmbPwd {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin-right: 4px;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: transparent;
+    -webkit-appearance: none;
+    border: 0.8px solid #fff;
+    border-radius: 2px;
+    outline: none;
+}
+.login-btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 230px;
+    padding: 14px 0px;
+    text-align: center;
+    border: 0;
+    color: #dbe8ff;
+    font-size: 16px;
+    background: url(./enterbutton.png) no-repeat;
+    background-size: 100% 100%;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */
+
+    color:#00baff;
+    
+    }

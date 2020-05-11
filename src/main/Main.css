@@ -1,0 +1,56 @@
+.main-box{
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/bgbg.png');
+    background-size: 100% 100%;
+
+}
+header{
+    height: 70px;
+    display: flex;
+    position: relative;
+    color: #a9bac9;
+}
+.header-center{
+    background: url('./img/firstnavbg.png');
+    background-size: 100% 100%;
+    width: 61%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    position: relative
+
+}
+.header-left {
+    background: url('./img/leftnavbg.png');
+    background-size: 100% 100%;
+    width: 22%;
+    height: calc(100% - 12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    position: absolute;
+}
+.header-right {
+    background: url("./img/rightnavbg.png");
+    background-size: 100% 100%;
+    width: calc(22%);
+    height: calc(100% - 12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    position: absolute;
+    right: 0;
+    padding-left: 40px;
+}
+.main-box-bottom{
+    margin: 15px 20px;
+    padding: 20px;
+    height: calc(100% - 100px);
+    width: calc(100% - 40px);
+    background-image: url('./img/biglistbg.png');
+    background-size: 100% 100%;
+}
