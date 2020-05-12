@@ -71,6 +71,7 @@ class MenuFirst extends React.Component{
         console.log(i)
         console.log(j)
         console.log(event.target)
+        console.log(1s)
         let temparr=this.state.FirstNavArrowIsShow;
 
         for (let index = 0; index < temparr.length; index++) {
