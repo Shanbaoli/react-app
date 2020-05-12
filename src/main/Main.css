@@ -45,6 +45,24 @@ header{
     position: absolute;
     right: 0;
     padding-left: 40px;
+    font-size: 16px;
+}
+.header-right>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    cursor: pointer;
+}
+.header-right img {
+    margin-right: 5px;
+}
+
+.index-user-img {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #4f8ad8;
+    border-radius: 50%;
 }
 .main-box-bottom{
     margin: 15px 20px;
@@ -53,4 +71,41 @@ header{
     width: calc(100% - 40px);
     background-image: url('./img/biglistbg.png');
     background-size: 100% 100%;
+}
+.nav-first {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    text-align: center;
+    margin: auto 85px;
+}
+.nav-box {
+    font-size: 18px;
+    position: relative;
+    line-height: 35px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+}
+.nav-box:hover {
+    color: #01cef3;
+    font-weight: 600;
+    text-shadow: 0.2rem 0rem 0.5rem #01cef352, -0.2rem 0rem 0.5rem #01cef352, 0rem 0.2rem 0.5rem #01cef352, 0rem -0.2rem 0.5rem #01cef352;
+}
+
+.nav-second {
+    background: url('./img/secondnavbg.png');
+    background-size: 100% 100%;
+    position: absolute;
+    width: calc(80% - 5px);
+    height: 44px;
+    bottom: -40px;
+    left: 10%;
+    /* display: none; */
+}
+.select-icon-first {
+    position: absolute;
+    bottom: -3px;
+    left: calc(50% - 10px);
+    width: 20px;
 }

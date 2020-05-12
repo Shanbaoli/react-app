@@ -28,8 +28,8 @@ ReactDOM.render(
       <Router>
 
         <Switch>
-              <Route exact path="/login" component={Login}/>
-              <Route exact path="/" component={Main}/>
+              <Route exact path="/" component={Login}/>
+              <Route exact path="/main" component={Main}/>
               
         </Switch>
 

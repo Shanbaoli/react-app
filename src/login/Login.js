@@ -10,10 +10,10 @@ class Login extends React.Component{
     }
 
     
-    render(props){
+    render(){
         return(
             <div className="login">
-                <LoginBox />
+                <LoginBox history={this.props.history}/>
     
             </div>
         )
@@ -26,7 +26,7 @@ function LoginBox(props){
     return(
         <div className="login-box">
             <LoginTip/>
-            <UserInputBox/>
+            <UserInputBox history={props.history}/>
         </div>
     )
 }
@@ -72,6 +72,9 @@ class UserInputBox extends React.Component{
        if (!codeIsTrue) {
         let sysCode=createCode()
         this.setState({sysCode:sysCode})
+        
+       }else{
+            this.props.history.push('./main')
        }
      }
 
