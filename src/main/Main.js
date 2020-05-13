@@ -6,6 +6,7 @@ import Mrzp from './img/mrzp.jpg'
 import Qp from './img/wholescreen.png'
 import LogoText from './img/logotext.png'
 import FirstNavArrow  from './img/firstnavarrow.png'
+import Home from './Home'
 class Main extends React.Component{
     constructor(props){
         super(props);
@@ -44,7 +45,10 @@ class Main extends React.Component{
                     </div>
                 </div>
             </header>
-            <div className="main-box-bottom"></div>
+            <div className="main-box-bottom">
+                <Home></Home>
+
+            </div>
         </div>
        
     }  
@@ -107,16 +111,19 @@ function FirstNavArrowIsShow(props){
 
 //二级菜单
 function MenuSecond(props){
+    let arr=['二级菜单1','二级菜单2','二级菜单3']
     return(
-        <div className="nav-second"></div>
+        <div className="nav-second">
+            <ul className="nav-second-box">
+                {
+                    arr.map((val,index)=>{
+                    return <li key={index}>{val}</li>
+                    })
+                }
+            </ul>
+        </div>
     )
 
 }
 
-
-function Btn(props){
-    return(
-        <button onClick={props.onClick}>测试</button>
-    )
-}
 export default Main

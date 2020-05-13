@@ -11,6 +11,8 @@ import MyTitle from './demo1/a'
 import Login from './login/Login'
 import Main from './main/Main'
 
+import EchartTj1 from './main/EchartTj1'
+
 function test(){
   ReactDOM.render(
     <React.StrictMode>
@@ -30,6 +32,7 @@ ReactDOM.render(
         <Switch>
               <Route exact path="/" component={Login}/>
               <Route exact path="/main" component={Main}/>
+              <Route exact path="/test" component={EchartTj1}/>
               
         </Switch>
 

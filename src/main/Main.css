@@ -109,3 +109,20 @@ header{
     left: calc(50% - 10px);
     width: 20px;
 }
+
+.nav-second-box>li {
+    width: 12%;
+    padding: 0 20px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+.nav-second-box>li:not(:last-child) {
+    border-right: 1px solid #4a5e76;
+}
+.nav-second-box {
+    list-style: none;
+    text-align: left;
+    margin: 11px 10%;
+    display: flex;
+}

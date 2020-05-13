@@ -6,6 +6,7 @@ html{
   background-position: center;
   background-repeat: no-repeat; */
   font-size: 14px;
+  color: rgb(185, 194, 202);
 
 }
 body {
@@ -17,6 +18,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 #root{
   width: 100%;
@@ -28,4 +30,10 @@ code {
 }
 div{
   box-sizing: border-box;
+}
+ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
