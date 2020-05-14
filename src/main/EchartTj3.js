@@ -8,38 +8,30 @@ import 'echarts/lib/component/tooltip';
 //import 'echarts/lib/component/title';
 import 'echarts/lib/component/legend';
 
-class EChartTj1 extends React.Component{
+class EChartTj3 extends React.Component{
     componentDidMount() {
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('main'));
+        var myChart = echarts.init(document.getElementById('bkqk'));
         // 绘制图表
         var option={
             grid:{
                 left: '16%',
                 bottom: '24%',
                 top:35,
-                right:'10%'
+                right: '10%'
             },
-            tooltip: {},
-            legend:{
-                data:['已结案','案件'],
-                right:'8%',
-                top:0,
-                textStyle:{
-                    color:'#6b7d8b'
-                }
-            },
-    
             xAxis:{
-                data:['蕉城','东桥','霞浦','古田','屏南','寿宁','周宁','拓荣','福安','福鼎'],
+                data:['蕉城','霞浦','屏南','周宁','福安','东桥','古田','寿宁','柘荣','福鼎'],
                 axisLabel:{
                         textStyle:{
                             color:'#6b7d8b'
+                            
                         }
                     },
                     axisLine:{
                         lineStyle:{
-                                   color:'#21314a'
+                                  color:'#21314a'
+                                   
                                }
                     }
             },
@@ -49,8 +41,8 @@ class EChartTj1 extends React.Component{
                       show: true,
                       lineStyle:{
                           type:'dashed',
-                        //   color:'#6b7d8b'
-                        color:'#21314a'
+                            // color:'#6b7d8b'
+                            color:'#21314a'
                       }
                     },
                     axisLabel:{
@@ -60,29 +52,23 @@ class EChartTj1 extends React.Component{
                     },
                     axisLine:{
                         lineStyle:{
-                                   color:'#21314a'
+                                   color:'#21314a',
+                                   
+                                   
                                }
-                    }
+                    },
+                    
             },
             series:[
-                {
-                    name:'已结案',
+                {  
                     type: 'bar',
-                    data:[12,20,35,40,50,66,79,89,97,109],
-                    z:10
-         
-                },
-                {
-                    name:'案件',
-                    type:'bar',
-                    data:[24,45,67,88,100,212,146,160,189,200],
-                    barGap:'-100%'
+                    data:[1,2,3,4,5,6,7,8,9,10]
                 }
             ],
-            color:['#00C7FF','#2CFF99']
-            
-    
-        }
+            color:['#00C7FF'],
+            tooltip: {},//显示工具
+        
+         }
         myChart.setOption(option);
 
         window.onresize = function(){
@@ -92,7 +78,7 @@ class EChartTj1 extends React.Component{
     }
     render() {
         return (
-            <div id="main" style={{ width: 100+'%', height: 100+'%' }}></div>
+            <div id="bkqk" style={{ width: 100+'%', height: 100+'%' }}></div>
         );
     }
 
@@ -100,4 +86,4 @@ class EChartTj1 extends React.Component{
     
 }
 
-export default EChartTj1
+export default EChartTj3

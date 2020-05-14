@@ -2,6 +2,10 @@ import React from 'react';
 import './Home.css'
 import TitleIcon from './img/titleicon.png'
 import EchartTj1 from './EchartTj1'
+import EchartTj2 from './EcharTj2'
+import EchartTj3 from './EchartTj3'
+import EcartTj4 from './EchartTj4'
+import EChartTj4 from './EchartTj4';
 class Home extends React.Component{
     constructor(props){
         super(props)
@@ -39,6 +43,8 @@ class Home extends React.Component{
                 <div className="chart chart-first">
                     <div className="chartItem chartItemRight">
                         <SbTitle contentText="统计1"></SbTitle>
+                        <EchartTj2></EchartTj2>
+
                     </div>
                     <div className="chartItem">
                         <SbTitle contentText="统计2"></SbTitle>
@@ -49,9 +55,11 @@ class Home extends React.Component{
                 <div className="chart">
                     <div className="chartItem chartItemRight">
                         <SbTitle contentText="统计3"></SbTitle>
+                        <EchartTj3></EchartTj3>
                     </div>
                     <div className="chartItem">
                         <SbTitle contentText="统计4"></SbTitle>
+                        <EChartTj4></EChartTj4>
                     </div>
 
                 </div>
